@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"/>
+
+    <ImageView android:id="@+id/img_rectangle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle2" />
+
+
+    <LinearLayout android:id="@+id/ly_log_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <ImageView android:id="@+id/img_log_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ly_log_1"
+        android:layout_marginTop="40dp"
+        android:padding="40dp">
+
+        <EditText
+            android:id="@+id/et_log_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/login_input"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Username"
+            android:paddingLeft="30dp"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/et_log_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_input"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Password"
+            android:paddingLeft="30dp"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button android:id="@+id/btn_log_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/black"
+            android:hint="Sign In"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Have an Account? "
+                android:textSize="15sp"/>
+
+            <TextView android:id="@+id/txt_log_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/blue"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

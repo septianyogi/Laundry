@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"/>
+
+    <ImageView android:id="@+id/img_rectangle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle1"/>
+
+    <ImageView android:id="@+id/img_logo_laundry"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/logolaundry"/>
+
+    <TextView android:id="@+id/txt_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_logo_laundry"/>
+
+    <TextView android:id="@+id/txt_laundry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laundry"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_nama"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_laundry"
+        android:padding="30dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="30sp"
+            android:fontFamily="@font/poppinsmedium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the , "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            >
+
+            <Button
+                android:id="@+id/btn_lp_login"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/poppinssemibold"
+                android:hint="Login"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
+            <Button android:id="@+id/btn_lp_register"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/white"
+                android:hint="Register"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppinssemibold"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
